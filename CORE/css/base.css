@@ -1,0 +1,5 @@
+p {
+  font-family: var(--ff, 'Special Elite'), serif;
+  font-size: var(--fs, 1rem);
+  color: var(--color, #2a1f18);
+}

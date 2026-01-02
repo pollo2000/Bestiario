@@ -1,0 +1,33 @@
+.btn-ancient{
+  font-family: 'Special Elite', serif;
+  font-size: 18px;
+
+  padding: 12px 18px;
+  border-radius: 10px;
+
+  color: #2a1f18;                /* tinta */
+  background: #00000000;           /* papel */
+  border: 2px solid #2a1f18;     /* borde quemado */
+  box-shadow:
+    0 6px 12px rgba(0,0,0,.18);
+  cursor: pointer;
+  user-select: none;
+  transition: transform .06s ease, box-shadow .12s ease, filter .12s ease;
+}
+
+.btn-ancient:hover{
+  transform: translateY(-1px);
+  box-shadow:
+    0 10px 18px rgba(0,0,0,.18);
+}
+
+.btn-ancient:active{
+  transform: translateY(1px);
+  box-shadow:
+    0 6px 12px rgba(0,0,0,.18);
+}
+
+.btn-ancient:focus-visible{
+  outline: 3px solid rgba(92,70,54,.35);
+  outline-offset: 3px;
+}
