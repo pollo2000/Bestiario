@@ -1,0 +1,88 @@
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 10px 12px;
+
+    /* look */
+    background: rgba(13, 13, 13, 0) 0%;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    transform: translateY(0);
+    transition: transform 180ms ease;
+}
+
+.topbar.is-hidden {
+    transform: translateY(-110%);
+}
+
+/* Logo */
+.brand {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.brand-logo {
+    height: 38px;
+    width: auto;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+}
+
+/* Search */
+.search {
+    flex: 1;
+    display: flex;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 12px;
+
+    border-radius: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    background: rgba(255, 255, 255, 0.25);
+
+    font-family: inherit;
+    outline: none;
+}
+
+.search-input:focus {
+    border-color: rgba(0, 0, 0, 0.45);
+    background: rgba(255, 255, 255, 0.32);
+}
+
+/* Para que el contenido no quede debajo del header */
+.content {
+    padding-top: 64px;
+    /* ajusta si cambias la altura del topbar */
+}
+
+.scroll-spacer {
+    height: 200vh;
+    /* dos pantallas de alto */
+}
+
+.hero {
+    max-width: 70ch;
+    padding: 0 1rem;
+    font-size: 1rem;
+    align-items: center;
+    margin: 0 auto;
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    line-height: 1.7;
+}

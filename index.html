@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="CORE/css/tokens.css">
     <link rel="stylesheet" href="CORE/css/base.css">
     <link rel="stylesheet" href="CORE/css/components.css">
+    <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -42,9 +43,25 @@
                     </svg>
                 </div>
             </h1>
-            <button class="btn-ancient">continuar>></button>
+            <a class="btn-ancient btn-nav" href="search.html">continuar>></a>
         </section>
     </main>
+    <script>
+  document.querySelectorAll('a.btn-nav').forEach(a => {
+    a.addEventListener('click', (e) => {
+      e.preventDefault(); // 👈 CLAVE
+
+      const href = a.getAttribute('href');
+
+      a.classList.add('is-leaving');
+
+      setTimeout(() => {
+        window.location.href = href;
+      }, 200);
+    });
+  });
+</script>
+
 </body>
 
 </html>

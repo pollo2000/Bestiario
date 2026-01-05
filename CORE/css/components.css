@@ -13,6 +13,11 @@
   cursor: pointer;
   user-select: none;
   transition: transform .06s ease, box-shadow .12s ease, filter .12s ease;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-decoration: none;
 }
 
 .btn-ancient:hover{
