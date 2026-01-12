@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');/* Luna's Bestiary Mask */
-
-.page{
+.main-page{
   max-height: 100vh;
   min-height: 100vh;
   display: grid;
@@ -51,7 +49,7 @@
 }
 
 @media (orientation: landscape){
-  .page{
+  .main-page{
     grid-template-rows: none;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
