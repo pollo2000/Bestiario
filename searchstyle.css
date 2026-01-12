@@ -67,8 +67,3 @@
 .content {
   padding-top: 64px; /* ajusta si cambias la altura del topbar */
 }
-
-.scroll-spacer {
-  height: 200vh; /* dos pantallas de alto */
-}
-
